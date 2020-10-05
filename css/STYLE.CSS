@@ -10,7 +10,7 @@ body{
 
 
  .login_link {
-    color: var(--clr-1);
+    color: var(--clr-1) !important;
     text-align: center;
     font-weight: 700;
     font-size: 14px;
@@ -19,6 +19,7 @@ body{
     display: inline-block;
     border-radius: 30px;
     text-decoration: none;
+     cursor: pointer;
 }
 .socials {padding: 0px !important }
 .socials li{
@@ -95,11 +96,21 @@ body{
     color: white;
 }
 
+.navigation-user-menu .crumina-icon , .navigation-search .crumina-icon{fill: var(--clr-1)}
+.language{
+    display: flex
+        ;justify-content: center;
+    align-items: center;
+    color: white ;
+    cursor: pointer;
+    font-size: 19px ;
+    font-weight: 500
+}
 
 .Systems{
     position: relative;
-    background-color:#ebf2f8 ;
-    padding: 3em 0;
+    background-color:#eeeeee ;
+    padding: 4em 0;
     direction: rtl;
     
 }
@@ -224,7 +235,7 @@ body{
     .banner-content{margin-bottom: 12px;}
 }
 
-.why-us{position: relative;background-color:#ebf2f8;padding: 5em 0;direction: rtl }
+.why-us{position: relative;background-color:#eeeeee;padding: 5em 0;direction: rtl }
 
 
 .why-us .why-us-title h3{

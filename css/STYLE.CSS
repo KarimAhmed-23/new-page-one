@@ -1,7 +1,7 @@
 body{
     font-family: "cairo", "Open Sans", sans-serif;
-    overflow-x: hidden
 }
+.main-content-wrapper{overflow-x: hidden}
 
 :root{
       --clr-1: #EA952E ;
@@ -91,13 +91,19 @@ body{
      background-color:#fff;
     border-color: #fff;
     color: #000;
+        transition: 0.7s ease;
+
 }
 .universal-links .link-2{
    
     background-color:#EA952E;
     border-color: #EA952E;
     color: white;
+    transition: 0.7s ease;
 }
+.universal-links .link-2:hover{background-color:#d77000;border-color: #d77000 }
+.universal-links .link-1:hover{background-color:rgba(255, 255, 255,.7);border-color:rgba(255, 255, 255,.7)}
+
 
 .navigation-user-menu .crumina-icon , .navigation-search .crumina-icon{fill: var(--clr-1)}
 .language{
@@ -151,6 +157,7 @@ body{
 .link-modal-popup:hover{fill: #fff !important}
 
 
+
 .Systems{
     position: relative;
     background-color:#eeeeee ;
@@ -182,10 +189,10 @@ body{
     height: 189px;
     transition: 0.6s ease;
 }
-.hover:hover{
+.system-content:hover .hover{
     animation: swing 0.7s ease;
 }
-.system-desc-img .img-hover:hover{
+.system-content:hover .img-hover{
     transform: scale(1.2);
 }
 .system-description{
@@ -370,6 +377,7 @@ body{
     
     
 }
+why-us-description{cursor: pointer}
 .why-us-description h3{
     font-size: 15px;
     color: #000;
@@ -383,9 +391,10 @@ body{
 
 }
 
-.why-us-description div img:hover{
+.why-us-description:hover  div img{
     animation: bounce 1s ease ;
 }
+
 /*
 @-webkit-keyframes shake {
   0%, 100% {
@@ -463,11 +472,12 @@ body{
   }
 }
 
-} 
+ 
 .why-us-description p{
     font-size: 12px;
     color: #808081;
     text-align: justify;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 767px) {
@@ -898,16 +908,14 @@ body{
 }
 
 .blog-content p{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     color: #808081;
     text-align: justify;
     text-overflow: ellipsis;
-    height: 154px;
-    max-height: 155px;
-    overflow:hidden;
-
-    
+    height: 154px !important;
+    max-height: 155px !important;
+    overflow:hidden !important; 
 }
 
 .blog-content a{

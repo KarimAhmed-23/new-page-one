@@ -7,6 +7,7 @@ $(".language").click(function(){
     $(".dropdown-language").slideToggle();
 }) ;
     
+    $(".num-counter").counterUp({delay:10,time:1000});
 
     
    $('.work-slider').slick({

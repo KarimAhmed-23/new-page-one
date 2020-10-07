@@ -3,11 +3,11 @@
 
 
 $(document).ready(function () {
+    
 $(".language").click(function(){
     $(".dropdown-language").slideToggle();
 }) ;
     
-    $(".num-counter").counterUp({delay:10,time:1000});
 
     
    $('.work-slider').slick({
@@ -117,7 +117,31 @@ $('.blog-slider').slick({
 });
 
 
+    /*
+$('.num-counter').each(function () {
+   var size = $(this).text().split(".")[1] ? $(this).text().split(".")[1].length : 0;
+   $(this).prop('Counter', 0).animate({
+      Counter: $(this).text()
+   }, {
+      duration: 2500,
+      step: function (func) {
+         $(this).text(parseFloat(func).toFixed(size));
+      }
+   });
+});*/
+    
+
+
+  
+  $('.num-counter').counterUp({
+    delay: 10, // the delay time in ms
+    time: 1000 // the speed time in ms
+  });
+  
+
 
     
     
 });
+    
+    

@@ -9,6 +9,13 @@ body{
 }
 
 
+.slider-content-title {  font-family: '29lt_bukra_boldbold';}
+.site-header.header--fixed{background-color: var(--clr-1)}
+
+.site-header:before {
+    background-image: url(../img//footer-line.png);
+}
+
  .login_link {
     color: var(--clr-1) !important;
     text-align: center;
@@ -105,7 +112,7 @@ body{
 .universal-links .link-1:hover{background-color:rgba(255, 255, 255,.7);border-color:rgba(255, 255, 255,.7)}
 
 
-.navigation-user-menu .crumina-icon , .navigation-search .crumina-icon{fill: var(--clr-1)}
+.navigation-user-menu .crumina-icon {fill: var(--clr-1)}
 .language{
     display: flex
         ;justify-content: center;
@@ -154,8 +161,94 @@ body{
   }
 }
 
-.link-modal-popup:hover{fill: #fff !important}
+.navigation-search:hover .crumina-icon{fill:#fff !important}
 
+.language{
+    
+    position: relative;
+    direction: rtl;
+}
+
+.dropdown-language {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+    left:38%;
+    margin-top:5px;
+
+}
+.dropdown-language a {
+  color: #ccc;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+    transition: 1s ease;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.dropdown-language a span{margin-right: 10px}
+.dropdown-language a:first-of-type{border-bottom: 1px solid #ccc}
+
+.dropdown-language a:hover {background-color: #eeeeee; border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;}
+
+.tooltip{position: relative}
+
+.tooltip .tooltiptext {
+  width: 120px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 100;
+  top: 90%;
+  left: 50%;
+  margin-left: -60px;
+    transition: all 0.7s ease;
+    display: none
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #000 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+display: block}
+
+
+
+@media (max-width:992px){
+    
+  .tooltip .tooltiptext {
+  top: 12px !important;
+  right: 20% !important;
+}
+
+.tooltip .tooltiptext::after {
+  top: 50% !important;
+  left: 104% !important;
+  margin-top: -5px !important;
+  border-width: 5px !important;
+  border-style: solid !important;
+  border-color: transparent transparent transparent black !important;
+}
+    .dropdown-language{right: 0;width: 200px;margin-bottom: 50px}
+}
 
 
 .Systems{
@@ -170,14 +263,25 @@ body{
     font-weight: bold;
     font-size: 20px;
     color: var(--clr-1);
+    font-family: '29lt_bukrabold_italic';
 }
 
+@media (min-width: 992px) and (max-width:1200px){
+    
+    .navigation-link { padding: 23px 5px;font-size: 13px}
+}
+
+.link-modal-popup .crumina-icon{fill:#fff !important}
+
+
 .system-desc-img{
+    /*
     background: url(../img/2.png) no-repeat center center ;
     width: 302px;
     height: 217px;
+        overflow: hidden;
+*/
     cursor: pointer;
-    overflow: hidden;
     position: relative;
     transition: 0.6s ease;
 
@@ -279,6 +383,8 @@ body{
 .system-description p{ 
     margin-bottom: 0;
     padding: 0px 20px;
+ font-family: 'efframedium';
+
 }
 
 .system_description{
@@ -311,7 +417,9 @@ body{
     color: var(--clr-1);
     letter-spacing: 0.5px;
     position: relative;
+    font-family: '29lt_bukrabold_italic';
 }
+.pricing-title{font-family: '29lt_bukrabold_italic';}
 .packages-title h3::after{
    position: absolute;
     content: "";
@@ -323,12 +431,15 @@ body{
     background-color: var(--clr-1)
     
 }
+.pricing-description{  font-family: 'efframedium'}
 
 .banner-content p{
   font-size: 23px;
     color: #000;
     font-weight: bold;
     line-height: 2;
+        font-family: '29lt_bukrabold_italic';
+
     
 }
 
@@ -382,7 +493,9 @@ why-us-description{cursor: pointer}
     font-size: 15px;
     color: #000;
     font-weight: bold;
-    text-align: center
+    text-align: center;
+    font-family: '29lt_bukrabold_italic';
+
 }
 .why-us-description div img{
     max-height: 116px !important;
@@ -391,9 +504,6 @@ why-us-description{cursor: pointer}
 
 }
 
-.why-us-description:hover  div img{
-    animation: bounce 1s ease ;
-}
 
 /*
 @-webkit-keyframes shake {
@@ -478,6 +588,8 @@ why-us-description{cursor: pointer}
     color: #808081;
     text-align: justify;
     cursor: pointer;
+        font-family: 'efframedium';
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -569,23 +681,26 @@ why-us-description{cursor: pointer}
     font-weight: bold;
     margin-bottom: 0;
     font-size: 17px;
+    margin-bottom: 0.7px;
     
 }
-.about-text p:last-of-type{
+.about-text p  .num-counter{
     
     color: var(--clr-1);
     font-weight: bold;
-    font-size: 35px;
+    font-size: 36px;
     margin-bottom: 0;
     margin-top: -8px;
     
     
 }
 
-.about-text p:last-of-type span{
+.about-text p span:last-child{
     
     font-size: 10px;
     font-weight: 900;
+        color: var(--clr-1);
+
     
 }
 
@@ -597,7 +712,7 @@ why-us-description{cursor: pointer}
 .our-work{
     position: relative;
     padding: 3em 0;
-    background-color: #ebf2f8;
+    background-color: #eeeeee;
     direction: rtl;
     
 }
@@ -614,6 +729,8 @@ why-us-description{cursor: pointer}
     display: inline-block;
     color: #fff;
     border-radius: 25px;
+        font-family: '29lt_bukrabold_italic';
+
 }
 
  .work-img{
@@ -629,7 +746,7 @@ why-us-description{cursor: pointer}
      
     
 }
-.work-name p{font-size: 20px;text-align: right}
+.work-name p{font-size: 20px;text-align: right;    font-family: '29lt_bukrabold_italic';}
 .work-img .back-ground{
     border: 1px solid #eeeeee;
          border-radius: 50%;
@@ -657,6 +774,8 @@ why-us-description{cursor: pointer}
     color:#808081;
     font-weight: 800;
     letter-spacing: .5px;
+        font-family: 'efframedium';
+
 }
 
 
@@ -711,8 +830,8 @@ why-us-description{cursor: pointer}
     background-color: #fff;
     font-weight: bold;
     border-radius: 10px;
-    
-    
+        font-family: '29lt_bukrabold_italic';
+
 }
 
 .partner{
@@ -747,10 +866,13 @@ why-us-description{cursor: pointer}
 
          
 }
+.partner-logo img{max-height: 94px}
 .partner-name p:nth-child(1){
     font-weight: bold;
     letter-spacing: 0.5px;
     color: #000;
+        font-family: '29lt_bukrabold_italic';
+
 }
 .partner-name p:nth-child(2){
     font-weight: bold;
@@ -763,9 +885,13 @@ why-us-description{cursor: pointer}
     font-weight: 600;
     letter-spacing: 0.5px;
     color: #808083;
-    font-size: 12px;
+    font-size: 13px;
     padding: 0px 50px;
-    text-align: justify
+    text-align: justify;
+    max-height: 96px;
+    height: 96px;
+      font-family: 'effraregular';
+  
 }
 
 .partner .icons span{
@@ -846,6 +972,7 @@ why-us-description{cursor: pointer}
     color: #000;
     font-weight: bold;
     letter-spacing: 0.7px;
+     font-family: '29lt_bukrabold_italic';
 }
 
 .free-try a , .free-try-2 a{
@@ -857,6 +984,7 @@ why-us-description{cursor: pointer}
     padding: 2px 20px;
     text-decoration: none;
     border-radius: 20px;
+     font-family: '29lt_bukrabold_italic';
 }
 
 
@@ -883,7 +1011,7 @@ why-us-description{cursor: pointer}
 .blog{
     
     position: relative;
-    background-color: #ebf2f8;
+    background-color: #eeeeee;
     padding: 3em 0;
     direction: rtl;
 }
@@ -903,19 +1031,22 @@ why-us-description{cursor: pointer}
     font-size: 20px;
     font-weight: bold;
     color: var(--clr-1);
-    letter-spacing: 0.5px
+    letter-spacing: 0.5px;
+     font-family: '29lt_bukrabold_italic';
     
 }
 
 .blog-content p{
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     color: #808081;
     text-align: justify;
     text-overflow: ellipsis;
     height: 154px !important;
     max-height: 155px !important;
     overflow:hidden !important; 
+    font-family: 'efframedium';
+
 }
 
 .blog-content a{
@@ -929,6 +1060,8 @@ why-us-description{cursor: pointer}
     text-align: center;
     text-decoration: none;
     display: inline-block;
+        font-family: '29lt_bukrabold_italic';
+
     
 }
 
@@ -974,7 +1107,9 @@ why-us-description{cursor: pointer}
     position: relative;
     padding: 3em 0;
     background-color: #1A233A;
-        direction: rtl
+        direction: rtl;
+        font-family: '29lt_bukrabold_italic';
+
 
 }
 
@@ -1011,8 +1146,9 @@ why-us-description{cursor: pointer}
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 0.5px;
-    
+        font-family: '29lt_bukra_boldbold';
 }
+.contact .contact-title p{color: #1a233a}
 .contact .contact-title span{color: var(--clr-1)}
 .contact-input input{
     color: #808081;
@@ -1068,7 +1204,8 @@ footer{
     font-weight: bold;
     color: #F5911E;
     letter-spacing: 0.5px;
-    /**margin-bottom: 15px;*//
+    /**margin-bottom: 15px;*/
+        font-family: '29lt_bukrabold_italic';
     
 }
 
@@ -1094,7 +1231,8 @@ footer{
     color:#fff;
     text-decoration: none;
     transition: 0.7s ease;
-    
+        font-family: 'efframedium';
+
 }
 
 .footer-menu ul li a:hover{color: var(--clr-1)}
@@ -1159,7 +1297,7 @@ footer{
     position: absolute;
     bottom: 0;
     left: 0;
-    background-image: url("../img/header-footer-gradient-bg.png");
+    background-image: url("../img/footer-line.png");
     display: block;
     width: 100%;
     height: 4px;

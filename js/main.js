@@ -108,6 +108,7 @@ var CRUMINA = {};
 				$stickyHeader.addClass("header--fixed");
 			} else {
 				$stickyHeader.removeClass("header--fixed");
+
 			}
 
 		});

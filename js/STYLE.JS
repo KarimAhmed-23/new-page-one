@@ -1,5 +1,13 @@
+
+
+
+
 $(document).ready(function () {
+$(".language").click(function(){
+    $(".dropdown-language").slideToggle();
+}) ;
     
+
     
    $('.work-slider').slick({
   dots: true,

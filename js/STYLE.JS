@@ -140,7 +140,25 @@ $('.num-counter').each(function () {
   
 
 
-    
+        $(function (){
+      
+ 
+    let maxHeight =0; 
+
+     $(".footer-menu ul").each(function(){
+        
+
+        if($(this).height() > maxHeight){
+            
+            maxHeight = $(this).height();
+        }
+         
+     
+    });
+    $(".footer-menu ul").height(maxHeight);
+
+     });
+
     
 });
     

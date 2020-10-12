@@ -1252,9 +1252,10 @@ footer{
     padding: 0;
     margin: 0;
     list-style-type: none;
+    /*
     min-height: 157px;
     max-height: 243px;
-    height: 240px;
+    height: 240px;*/
     border-right: 1px solid #ccc;
     margin-top: 36px;
     margin-bottom: 20px

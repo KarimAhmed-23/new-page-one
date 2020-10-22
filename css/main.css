@@ -6487,13 +6487,14 @@ table > tfoot > tr.danger > th {
 
 .pricing-tables-item-border-bottom {
   text-align: center;
-  padding: 60px; }
+  padding: 63px; }
   .pricing-tables-item-border-bottom:hover .bg-layer {
     height: 100%; }
   .pricing-tables-item-border-bottom:hover .pricing-description {
     color: var(--white-color); }
   .pricing-tables-item-border-bottom:hover .pricing-link .crumina-icon {
     fill: var(--white-color); }
+  
   .pricing-tables-item-border-bottom .pricing-description {
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;

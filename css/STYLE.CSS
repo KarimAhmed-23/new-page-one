@@ -139,6 +139,7 @@ body{
 .crumina-main-slider .slider-content-title{font-size: 26px}
 
 }
+.slider-thumb img {max-height: 505px !important}
 
 @media (min-width:576px){
     .universal-links .link-1,.universal-links .link-2{padding:7px 35px; } 

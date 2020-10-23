@@ -146,7 +146,7 @@ $('.blog-slider').slick({
     $(".pricing-description").matchHeight();
     $(".why-us-description").matchHeight();
 
-$(".partner").matchHeight();
+$(".partner-name").matchHeight();
 
     $(".blog-content").matchHeight();
     $(".blog-content p").matchHeight();

@@ -16,6 +16,8 @@
 
 .site-header:before {
     background-image: url(../img//footer-line.png);
+	background-repeat: initial;
+	height: 2px
 }
 
 @media (max-width: 500px){.navigation-body {width: 300px}}
@@ -1418,7 +1420,10 @@ footer{
 .Social-media span:hover {    transition: 0.7s ease;  transform: scale(1.1)}
 
 
-
+.back-to-top {
+    right: 20px !important;
+    left: auto !important;
+}
 #icon-to-top{fill: var(--clr-1)!important}
 
 @media (max-width: 768px){
@@ -1461,15 +1466,14 @@ footer{
     background-image: url("../img/footer-line.png");
     display: block;
     width: 100%;
-    height: 4px;
-    background-repeat: repeat-x;
+    height: 5px;
     background-size: contain;
 }
 
 @media(max-width:992px){
 	.banner-5{
 		bottom: 45px;
-		height: 7px;
+		height: 8px;
 	}	
 	
 }

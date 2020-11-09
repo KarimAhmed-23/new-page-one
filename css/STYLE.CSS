@@ -1449,14 +1449,22 @@ footer{
 
 .banner-5{
     position: absolute;
-    bottom: 45px;
+    bottom: 0px;
     left: 0;
     background-image: url("../img/footer-line.png");
     display: block;
     width: 100%;
-    height: 7px;
+    height: 4px;
     background-repeat: repeat-x;
     background-size: contain;
+}
+
+@media(max-width:992px){
+	.banner-5{
+		bottom: 45px;
+		height: 7px;
+	}	
+	
 }
 
 .submenu-indicator{margin-right: 6px !important}

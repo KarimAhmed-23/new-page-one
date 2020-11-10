@@ -110,7 +110,8 @@
     align-content: center;
     font-family: '29lt_bukrabold_italic';
     flex-flow: wrap;
-    justify-content: center
+    justify-content: center;
+	
 }
 .universal-links .link-1{
      background-color:#fff;
@@ -118,6 +119,7 @@
     color: #000;
     transition: 0.7s ease;
     box-shadow: 7px 7px 5px rgba(0,0,0,.075);
+	margin-left: 0px
 
 }
 .universal-links .link-2{
@@ -127,7 +129,7 @@
     color: white;
     transition: 0.7s ease;
         box-shadow: 7px 7px 5px rgba(0,0,0,.075);
-
+   margin-left: 15px
 
 
 

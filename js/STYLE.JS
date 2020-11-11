@@ -155,9 +155,9 @@ $(".partner-name").matchHeight();
 
     $(".blog-content").matchHeight();
 
- 
+     $(".footer-menu h5").matchHeight();
+
     $(".footer-menu-ul").matchHeight();
-        $(".footer-menu h5").matchHeight();
 
  
     

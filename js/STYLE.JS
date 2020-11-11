@@ -20,7 +20,11 @@ $(window).on("load", function(){
 $(document).ready(function () {
     
 $(".language").click(function(){
-    $(".dropdown-language").slideToggle();
+    $(".dropdown-conutry").slideToggle();
+}) ;
+	
+	$(".navigation-link.position-relative").click(function(){
+    $(".dropdown-conutry").slideToggle();
 }) ;
     
 

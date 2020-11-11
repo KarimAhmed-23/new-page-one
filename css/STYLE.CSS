@@ -35,7 +35,7 @@
 	#conutry .submenu-indicator{display: none}
 	.navigation-dropdown-link:hover{background-color: #fff;color: #000 !important}
 	#lang svg {width: 20px;height: 20px;margin-left: 0.5rem}
-    .navigation-body-header{justify-content: center;padding: 20px;position: relative}
+    .navigation-body-header{justify-content: center;padding: 25px;position: relative}
 
 	.navigation-logo .logo-img{display: none}
 	.navigation-logo .login-link span{

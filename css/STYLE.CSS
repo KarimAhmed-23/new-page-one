@@ -365,6 +365,9 @@
 }
 
 .submenu-indicator{margin-right: 6px !important}
+.submenu-indicator:after{
+	transform: rotate(45deg) translateY(-50%)
+}
 
 @media (min-width: 400px) and (max-width: 768px){
 .button--l {

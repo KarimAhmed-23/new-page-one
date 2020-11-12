@@ -271,11 +271,20 @@
 @media (max-width: 500px){.navigation-body {width: 300px}}
 
 
+.submenu-indicator{margin-right: 6px !important}
+
+@media (min-width: 991px){
+	
+	.submenu-indicator {margin-right: 8px !important}
+
+	}
+
+
 @media (max-width: 991px){
 	
 .navigation-hosting-item-img {margin-left: 15px !important}
  .navigation-hosting-item-img {margin-right: 0px !important}
-  .submenu-indicator:after{margin: -2px 0 0 -58px !important}
+  .submenu-indicator:after{margin: -3px 0 0 -58px !important}
 
 }
 
@@ -364,10 +373,7 @@
     .universal-links .link-1,.universal-links .link-2{padding:7px 35px; } 
 }
 
-.submenu-indicator{margin-right: 6px !important}
-.submenu-indicator:after{
-	transform: rotate(45deg) translateY(-50%)
-}
+
 
 @media (min-width: 400px) and (max-width: 768px){
 .button--l {

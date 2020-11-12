@@ -135,6 +135,7 @@ $('.blog-slider').slick({
     }
  
   ]
+	
 });
 
 
